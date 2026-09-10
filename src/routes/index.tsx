@@ -3,8 +3,8 @@ import { useEffect, useRef, useState, type ChangeEvent, type FormEvent } from "r
 import { ArrowDown, ArrowRight, Check, Menu, Upload, X } from "lucide-react";
 import { z } from "zod";
 
-import heroImage from "@/assets/private-automotive-hero.jpg";
-import philosophyImage from "@/assets/private-automotive-philosophy.jpg";
+import heroImage from "@/assets/private-automotive-hero.jpg.asset.json";
+import philosophyImage from "@/assets/private-automotive-philosophy.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -169,7 +169,7 @@ function Index() {
       </header>
 
       <section id="top" className="hero-section relative flex min-h-[96svh] items-end">
-        <img src={heroImage} alt="Sculptural automotive silhouette in a private studio" width={1920} height={1280} className="absolute inset-0 h-full w-full object-cover" />
+        <img src={heroImage.url} alt="Sculptural automotive silhouette in a private studio" width={1920} height={1280} className="absolute inset-0 h-full w-full object-cover" />
         <div className="hero-shade absolute inset-0" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-16 pt-36 md:px-10 md:pb-20">
           <div className="hero-content max-w-4xl">
@@ -214,7 +214,7 @@ function Index() {
       </section>
 
       <section className="philosophy-section relative min-h-[78svh] overflow-hidden">
-        <img src={philosophyImage} alt="Abstract carbon-fiber automotive body detail" width={1920} height={1088} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={philosophyImage.url} alt="Abstract carbon-fiber automotive body detail" width={1920} height={1088} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
         <div className="philosophy-shade absolute inset-0" />
         <div className="relative mx-auto flex min-h-[78svh] max-w-7xl items-center px-6 py-24 md:px-10">
           <div className="glass-panel reveal max-w-3xl p-7 md:p-12">
